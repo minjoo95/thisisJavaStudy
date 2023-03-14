@@ -2,10 +2,10 @@ package sec03.exam01_parent_constructor_call;
 
 public class Student extends People {
 	// 컴파일 오류가 나는 이유
-	// 암시적으로 super() 생성자가 호출이 되어 부모의 기본생성자를 호출하기 때문에
-	//public Student() {
-	//super();
-	//}
+	// 암시적으로 super() 생성자가 호출이 되어 부모의 기본생성자를 호출하는데
+	//부모클래스에는 기본생성자가 없다. 
+	
+	
 	
 	
 	public int studentNo;
@@ -17,4 +17,5 @@ public class Student extends People {
 		this.studentNo = studentNo;
 		System.out.println("자식객체 생성완료");
 	}
+	
 }
